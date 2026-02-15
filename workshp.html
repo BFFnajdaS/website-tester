@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>24/7 Emergency Towing | Hulu Selangor & Rawang | Multipurpose Automobile</title>
+    <meta name="description" content="24/7 emergency towing service in Hulu Selangor, Rawang, and surrounding areas. Fast response, professional service. Call 014-320 0345 now!">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&family=Work+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        :root {
+            --primary-yellow: #FFC107;
+            --primary-black: #0A0A0A;
+            --secondary-orange: #FF6B35;
+            --text-light: #F5F5F5;
+            --text-dark: #1A1A1A;
+            --border-yellow: #FFD54F;
+            --bg-dark: #121212;
+            --bg-section: #1A1A1A;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Work Sans', sans-serif;
+            background: var(--bg-dark);
+            color: var(--text-light);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Sticky Header */
+        .sticky-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(10, 10, 10, 0.98);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            padding: 12px 20px;
+            border-bottom: 2px solid var(--primary-yellow);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 20px rgba(255, 193, 7, 0.1);
+        }
+
+        .logo-text {
+            font-family: 'Outfit', sans-serif;
+            font-weight: 800;
+            font-size: 18px;
+            color: var(--primary-yellow);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .header-cta {
+            display: flex;
+            gap: 10px;
+        }
+
+        .header-cta a {
+            padding: 10px 16px;
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 14px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .call-btn-header {
+            background: var(--secondary-orange);
+            color: white;
+            border: 2px solid var(--secondary-orange);
+        }
+
+        .call-btn-header:hover {
+            background: transparent;
+            color: var(--secondary-orange);
+            transform: scale(1.05);
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 120px 20px 60px;
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(135deg, #0A0A0A 0%, #1A1A1A 100%);
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                linear-gradient(45deg, transparent 48%, rgba(255, 193, 7, 0.03) 50%, transparent 52%),
+                linear-gradient(-45deg, transparent 48%, rgba(255, 107, 53, 0.03) 50%, transparent 52%);
+            background-size: 60px 60px;
+            animation: gridMove 20s linear infinite;
+            opacity: 0.5;
+        }
+
+        @keyframes gridMove {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(60px, 60px); }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 900px;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Image/Video Placeholder */
+        .hero-media {
+            width: 100%;
+            max-width: 700px;
+            height: 300px;
+            background: linear-gradient(135deg, #1A1A1A 0%, #2A2A2A 100%);
+            border: 3px solid var(--primary-yellow);
+            border-radius: 16px;
+            margin-bottom: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(255, 193, 7, 0.2);
+        }
+
+        .hero-media::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(255, 193, 7, 0.1), transparent);
+            animation: shimmer 3s infinite;
+        }
+
+        @keyframes shimmer {
+            0% { transform: translateX(-100%) translateY(-100%); }
+            100% { transform: translateX(100%) translateY(100%); }
+        }
+
+        .media-placeholder {
+            font-size: 16px;
+            color: var(--border-yellow);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 600;
+            z-index: 1;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: var(--secondary-orange);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 30px;
+            font-weight: 700;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        h1 {
+            font-family: 'Outfit', sans-serif;
+            font-size: clamp(32px, 8vw, 64px);
+            font-weight: 800;
+            color: var(--primary-yellow);
+            margin-bottom: 20px;
+            line-height: 1.1;
+            text-transform: uppercase;
+            letter-spacing: -1px;
+        }
+
+        .hero-subtitle {
+            font-size: clamp(18px, 4vw, 24px);
+            color: var(--text-light);
+            margin-bottom: 40px;
+            font-weight: 500;
+            opacity: 0.9;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .cta-btn {
+            padding: 20px 40px;
+            font-size: 20px;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+        }
+
+        .cta-primary {
+            background: var(--secondary-orange);
+            color: white;
+            border: 3px solid var(--secondary-orange);
+            flex: 1;
+            min-width: 250px;
+            justify-content: center;
+            animation: fadeInUp 1s ease-out 0.2s backwards;
+        }
+
+        .cta-primary:hover {
+            background: transparent;
+            color: var(--secondary-orange);
+            transform: translateY(-4px);
+            box-shadow: 0 12px 32px rgba(255, 107, 53, 0.4);
+        }
+
+        .cta-secondary {
+            background: transparent;
+            color: var(--primary-yellow);
+            border: 3px solid var(--primary-yellow);
+            flex: 1;
+            min-width: 250px;
+            justify-content: center;
+            animation: fadeInUp 1s ease-out 0.4s backwards;
+        }
+
+        .cta-secondary:hover {
+            background: var(--primary-yellow);
+            color: var(--primary-black);
+            transform: translateY(-4px);
+            box-shadow: 0 12px 32px rgba(255, 193, 7, 0.4);
+        }
+
+        .phone-icon, .whatsapp-icon {
+            font-size: 24px;
+        }
+
+        /* FontAwesome icon spacing */
+        .coverage-item i,
+        .pricing-note i,
+        .hero-badge i,
+        .highway-coverage i {
+            margin-right: 8px;
+        }
+
+        /* WhatsApp brand color */
+        .fa-whatsapp {
+            color: #25D366;
+        }
+
+        /* Section Styling */
+        section {
+            padding: 80px 20px;
+            position: relative;
+        }
+
+        .section-alt {
+            background: var(--bg-section);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-family: 'Outfit', sans-serif;
+            font-size: clamp(28px, 6vw, 48px);
+            font-weight: 800;
+            color: var(--primary-yellow);
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: -1px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 60%;
+            height: 4px;
+            background: var(--secondary-orange);
+        }
+
+        .section-subtitle {
+            font-size: 18px;
+            color: var(--text-light);
+            opacity: 0.8;
+            margin-bottom: 50px;
+        }
+
+        /* Services Grid */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .service-card {
+            background: linear-gradient(135deg, #1A1A1A 0%, #252525 100%);
+            padding: 35px 25px;
+            border-radius: 16px;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary-yellow), var(--secondary-orange));
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover {
+            border-color: var(--primary-yellow);
+            transform: translateY(-8px);
+            box-shadow: 0 12px 32px rgba(255, 193, 7, 0.2);
+        }
+
+        .service-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .service-icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .service-title {
+            font-family: 'Outfit', sans-serif;
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--primary-yellow);
+            margin-bottom: 12px;
+        }
+
+        .service-desc {
+            color: var(--text-light);
+            opacity: 0.85;
+            line-height: 1.6;
+        }
+
+        .pricing-note {
+            background: rgba(255, 193, 7, 0.1);
+            border-left: 4px solid var(--primary-yellow);
+            padding: 20px 25px;
+            border-radius: 8px;
+            margin-top: 40px;
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--primary-yellow);
+        }
+
+        /* Coverage Area */
+        .coverage-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 40px 0;
+        }
+
+        .coverage-item {
+            background: linear-gradient(135deg, #1A1A1A 0%, #252525 100%);
+            padding: 20px;
+            border-radius: 12px;
+            border-left: 4px solid var(--secondary-orange);
+            font-weight: 600;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+
+        .coverage-item:hover {
+            background: linear-gradient(135deg, #252525 0%, #2A2A2A 100%);
+            border-left-color: var(--primary-yellow);
+            transform: translateX(8px);
+        }
+
+        .highway-coverage {
+            background: linear-gradient(135deg, var(--secondary-orange) 0%, #ff8558 100%);
+            padding: 30px;
+            border-radius: 16px;
+            margin-top: 30px;
+            text-align: center;
+            border: 3px solid var(--primary-yellow);
+            box-shadow: 0 8px 24px rgba(255, 107, 53, 0.3);
+        }
+
+        .highway-coverage h3 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 24px;
+            font-weight: 800;
+            color: white;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .highway-coverage p {
+            font-size: 20px;
+            font-weight: 600;
+            color: white;
+        }
+
+        /* Map Placeholder */
+        .map-placeholder {
+            width: 100%;
+            height: 400px;
+            background: linear-gradient(135deg, #1A1A1A 0%, #2A2A2A 100%);
+            border: 3px solid var(--primary-yellow);
+            border-radius: 16px;
+            margin: 40px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .map-placeholder::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                repeating-linear-gradient(0deg, transparent, transparent 40px, rgba(255, 193, 7, 0.05) 40px, rgba(255, 193, 7, 0.05) 80px),
+                repeating-linear-gradient(90deg, transparent, transparent 40px, rgba(255, 193, 7, 0.05) 40px, rgba(255, 193, 7, 0.05) 80px);
+        }
+
+        /* Why Choose Us */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .feature-card {
+            background: linear-gradient(135deg, #1A1A1A 0%, #252525 100%);
+            padding: 40px 30px;
+            border-radius: 16px;
+            text-align: center;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: 16px;
+            padding: 2px;
+            background: linear-gradient(135deg, var(--primary-yellow), var(--secondary-orange));
+            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .feature-card:hover::before {
+            opacity: 1;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 32px rgba(255, 193, 7, 0.2);
+        }
+
+        .feature-icon {
+            font-size: 56px;
+            margin-bottom: 20px;
+        }
+
+        .feature-title {
+            font-family: 'Outfit', sans-serif;
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--primary-yellow);
+            margin-bottom: 12px;
+        }
+
+        .feature-desc {
+            color: var(--text-light);
+            opacity: 0.85;
+        }
+
+        /* Gallery Section */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .gallery-item {
+            height: 250px;
+            background: linear-gradient(135deg, #1A1A1A 0%, #2A2A2A 100%);
+            border: 3px solid var(--border-yellow);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+            border-color: var(--secondary-orange);
+            box-shadow: 0 12px 32px rgba(255, 193, 7, 0.3);
+        }
+
+        .video-placeholder {
+            background: linear-gradient(135deg, #252525 0%, #1A1A1A 100%);
+            position: relative;
+        }
+
+        .video-placeholder::after {
+            content: '▶';
+            position: absolute;
+            font-size: 64px;
+            color: var(--primary-yellow);
+            opacity: 0.6;
+        }
+
+        /* Contact Section */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .contact-card {
+            background: linear-gradient(135deg, var(--bg-section) 0%, #252525 100%);
+            padding: 35px 30px;
+            border-radius: 16px;
+            border: 2px solid var(--primary-yellow);
+            transition: all 0.3s ease;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 32px rgba(255, 193, 7, 0.3);
+            border-color: var(--secondary-orange);
+        }
+
+        .contact-icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .contact-label {
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--primary-yellow);
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .contact-value {
+            font-size: 20px;
+            font-weight: 600;
+            color: var(--text-light);
+            word-break: break-word;
+        }
+
+        .contact-value a {
+            color: var(--text-light);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-value a:hover {
+            color: var(--secondary-orange);
+        }
+
+        /* Emergency CTA */
+        .emergency-cta {
+            background: linear-gradient(135deg, var(--secondary-orange) 0%, #ff8558 100%);
+            padding: 60px 30px;
+            border-radius: 20px;
+            text-align: center;
+            margin-top: 60px;
+            border: 4px solid var(--primary-yellow);
+            box-shadow: 0 12px 40px rgba(255, 107, 53, 0.4);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .emergency-cta::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+            animation: rotate 20s linear infinite;
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .emergency-cta h2 {
+            font-family: 'Outfit', sans-serif;
+            font-size: clamp(32px, 6vw, 48px);
+            font-weight: 800;
+            color: white;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            position: relative;
+            z-index: 1;
+        }
+
+        .emergency-cta p {
+            font-size: 20px;
+            color: white;
+            margin-bottom: 30px;
+            opacity: 0.95;
+            position: relative;
+            z-index: 1;
+        }
+
+        .emergency-cta .cta-btn {
+            background: white;
+            color: var(--secondary-orange);
+            border-color: white;
+            position: relative;
+            z-index: 1;
+        }
+
+        .emergency-cta .cta-btn:hover {
+            background: var(--primary-yellow);
+            border-color: var(--primary-yellow);
+            color: var(--primary-black);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--primary-black);
+            padding: 40px 20px;
+            text-align: center;
+            border-top: 3px solid var(--primary-yellow);
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-logo {
+            font-family: 'Outfit', sans-serif;
+            font-size: 28px;
+            font-weight: 800;
+            color: var(--primary-yellow);
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        .footer-text {
+            color: var(--text-light);
+            opacity: 0.7;
+            margin-bottom: 10px;
+        }
+
+        /* Mobile Optimizations */
+        @media (max-width: 768px) {
+            .sticky-header {
+                padding: 10px 15px;
+            }
+
+            .logo-text {
+                font-size: 14px;
+            }
+
+            .header-cta a {
+                padding: 8px 12px;
+                font-size: 12px;
+            }
+
+            .hero {
+                padding: 100px 15px 40px;
+            }
+
+            .hero-media {
+                height: 200px;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .cta-btn {
+                padding: 18px 30px;
+                font-size: 18px;
+                width: 100%;
+                min-width: auto;
+            }
+
+            section {
+                padding: 60px 15px;
+            }
+
+            .services-grid,
+            .features-grid,
+            .coverage-grid,
+            .contact-grid,
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Sticky Header -->
+    <header class="sticky-header">
+        <div class="logo-text">Towing 24/7</div>
+        <div class="header-cta">
+            <a href="tel:+60143200345" class="call-btn-header">Call Now</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <!-- Image/Video Placeholder -->
+            <div class="hero-media">
+                <div class="media-placeholder">Add Your Towing Truck Photo/Video Here</div>
+            </div>
+
+            <div class="hero-badge"><i class="fas fa-bolt"></i> 24/7 Emergency Service</div>
+            <h1>Multipurpose Automobile</h1>
+            <p class="hero-subtitle">Professional Towing Service - Hulu Selangor & Rawang</p>
+            
+            <div class="cta-buttons">
+                <a href="tel:+60143200345" class="cta-btn cta-primary">
+                    <i class="fas fa-phone-alt phone-icon"></i>
+                    CALL NOW: 014-320 0345
+                </a>
+                <a href="https://wa.me/60143200345" class="cta-btn cta-secondary" target="_blank">
+                    <i class="fab fa-whatsapp whatsapp-icon"></i>
+                    WhatsApp Us
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section-alt">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <p class="section-subtitle">Comprehensive towing solutions when you need them most</p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-ambulance service-icon"></i>
+                    <h3 class="service-title">Emergency Towing (24/7)</h3>
+                    <p class="service-desc">Round-the-clock emergency towing service. We're always ready to help, day or night.</p>
+                </div>
+                
+                <div class="service-card">
+                    <i class="fas fa-car-crash service-icon"></i>
+                    <h3 class="service-title">Accident Towing</h3>
+                    <p class="service-desc">Fast and safe accident recovery. We handle your vehicle with care during stressful situations.</p>
+                </div>
+                
+                <div class="service-card">
+                    <i class="fas fa-motorcycle service-icon"></i>
+                    <h3 class="service-title">Motorcycle Towing</h3>
+                    <p class="service-desc">Specialized motorcycle transport with secure tie-down systems for safe delivery.</p>
+                </div>
+                
+                <div class="service-card">
+                    <i class="fas fa-wrench service-icon"></i>
+                    <h3 class="service-title">Breakdown Assistance</h3>
+                    <p class="service-desc">Quick response to roadside breakdowns. Get back on the road or towed to safety.</p>
+                </div>
+            </div>
+
+            <div class="pricing-note">
+                <i class="fas fa-money-bill-wave"></i> Starting from RM80 - Price varies by distance and service type
+            </div>
+        </div>
+    </section>
+
+    <!-- Coverage Area Section -->
+    <section>
+        <div class="container">
+            <h2 class="section-title">Coverage Area</h2>
+            <p class="section-subtitle">Serving Hulu Selangor and surrounding regions</p>
+            
+            <div class="coverage-grid">
+                <div class="coverage-item"><i class="fas fa-map-marker-alt"></i> Hulu Selangor</div>
+                <div class="coverage-item"><i class="fas fa-map-marker-alt"></i> Rawang</div>
+                <div class="coverage-item"><i class="fas fa-map-marker-alt"></i> Serendah</div>
+                <div class="coverage-item"><i class="fas fa-map-marker-alt"></i> Kuala Kubu Bahru</div>
+                <div class="coverage-item"><i class="fas fa-map-marker-alt"></i> Batang Kali</div>
+                <div class="coverage-item"><i class="fas fa-map-marker-alt"></i> Rasa</div>
+                <div class="coverage-item"><i class="fas fa-map-marker-alt"></i> Bukit Beruntung</div>
+                <div class="coverage-item"><i class="fas fa-map-marker-alt"></i> Bukit Sentosa</div>
+                <div class="coverage-item"><i class="fas fa-map-marker-alt"></i> Bandar Sg Buaya</div>
+                <div class="coverage-item"><i class="fas fa-map-marker-alt"></i> Country Homes</div>
+                <div class="coverage-item"><i class="fas fa-map-marker-alt"></i> Tasik Putri</div>
+                <div class="coverage-item"><i class="fas fa-map-marker-alt"></i> Templer Park</div>
+                <div class="coverage-item"><i class="fas fa-map-marker-alt"></i> Sg Choh</div>
+                <div class="coverage-item"><i class="fas fa-map-marker-alt"></i> Sg Tenggi</div>
+                <div class="coverage-item"><i class="fas fa-map-marker-alt"></i> Suharto</div>
+            </div>
+
+            <div class="highway-coverage">
+                <h3><i class="fas fa-road"></i> PLUS Highway Coverage</h3>
+                <p>Tanjung Malim to Sg Buluh</p>
+            </div>
+
+            <!-- Map Placeholder -->
+            <div class="map-placeholder">
+                <div class="media-placeholder">Add Coverage Map or Service Area Image Here</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="section-alt">
+        <div class="container">
+            <h2 class="section-title">Why Choose Us</h2>
+            <p class="section-subtitle">Trusted towing service with professional standards</p>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-clock feature-icon"></i>
+                    <h3 class="feature-title">24/7 Availability</h3>
+                    <p class="feature-desc">We never close. Call us anytime, any day of the week.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <i class="fas fa-bolt feature-icon"></i>
+                    <h3 class="feature-title">Fast Response Time</h3>
+                    <p class="feature-desc">Quick dispatch and arrival. We know time matters in emergencies.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <i class="fas fa-user-shield feature-icon"></i>
+                    <h3 class="feature-title">Professional Service</h3>
+                    <p class="feature-desc">Experienced operators who handle your vehicle with care.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <i class="fas fa-dollar-sign feature-icon"></i>
+                    <h3 class="feature-title">Affordable Rates</h3>
+                    <p class="feature-desc">Competitive pricing with transparent costs. No hidden fees.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section>
+        <div class="container">
+            <h2 class="section-title">Our Fleet & Work</h2>
+            <p class="section-subtitle">See our equipment and recent towing jobs</p>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <div class="media-placeholder">Tow Truck Photo 1</div>
+                </div>
+                <div class="gallery-item">
+                    <div class="media-placeholder">Tow Truck Photo 2</div>
+                </div>
+                <div class="gallery-item">
+                    <div class="media-placeholder">Service Photo 1</div>
+                </div>
+                <div class="gallery-item video-placeholder">
+                    <div class="media-placeholder">Service Video</div>
+                </div>
+                <div class="gallery-item">
+                    <div class="media-placeholder">Service Photo 2</div>
+                </div>
+                <div class="gallery-item">
+                    <div class="media-placeholder">Service Photo 3</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section-alt">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <p class="section-subtitle">Reach us anytime - we're here to help</p>
+            
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <i class="fas fa-phone-alt contact-icon"></i>
+                    <div class="contact-label">Phone</div>
+                    <div class="contact-value">
+                        <a href="tel:+60143200345">014-320 0345</a>
+                    </div>
+                </div>
+                
+                <div class="contact-card">
+                    <i class="fab fa-whatsapp contact-icon"></i>
+                    <div class="contact-label">WhatsApp</div>
+                    <div class="contact-value">
+                        <a href="https://wa.me/60143200345" target="_blank">014-320 0345</a>
+                    </div>
+                </div>
+                
+                <div class="contact-card">
+                    <i class="fas fa-envelope contact-icon"></i>
+                    <div class="contact-label">Email</div>
+                    <div class="contact-value">
+                        <a href="mailto:multipurposeautomobile@gmail.com">multipurposeautomobile@gmail.com</a>
+                    </div>
+                </div>
+                
+                <div class="contact-card">
+                    <i class="fas fa-map-marker-alt contact-icon"></i>
+                    <div class="contact-label">Address</div>
+                    <div class="contact-value">
+                        Lot Pt 3471, Jalan Monorail<br>
+                        48200 Serendah<br>
+                        Hulu Selangor, Selangor
+                    </div>
+                </div>
+            </div>
+
+            <!-- Emergency CTA -->
+            <div class="emergency-cta">
+                <h2>Need Towing Right Now?</h2>
+                <p>Don't wait - we're standing by 24/7 for emergencies</p>
+                <a href="tel:+60143200345" class="cta-btn">
+                    <i class="fas fa-phone-alt phone-icon"></i>
+                    CALL 014-320 0345 NOW
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">Multipurpose Automobile</div>
+            <p class="footer-text">24/7 Professional Towing Service | Hulu Selangor & Rawang</p>
+            <p class="footer-text">Phone: 014-320 0345 | Email: multipurposeautomobile@gmail.com</p>
+            <p class="footer-text">Lot Pt 3471, Jalan Monorail, 48200 Serendah, Hulu Selangor</p>
+            <p class="footer-text" style="margin-top: 20px; opacity: 0.5;">© 2025 Multipurpose Automobile. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
